@@ -1,3 +1,9 @@
+리코일. 수년 전에 이런 새로 나왔단건 알고 있었지만 스테이블한 버전이 나올때까지 기다린단 핑계로 공부를 안하고 있었는데... 드디어 제대로 써본다
+
+찍먹 단계에서부터 다른 보일러플레이트 코드를 가져와 이것저것 실험해보고 요즘 유행하는건 다 갖다 붙여볼 예정~!
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
