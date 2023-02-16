@@ -12,6 +12,10 @@
     "lint": "npm lint:format && npm lint:fix "
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.9",
+    "@mui/material": "^5.11.9",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "eslint-config-prettier": "^8.6.0",
@@ -20,9 +24,14 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "recoil": "^0.7.6"
+    "react-query": "^3.39.3",
+    "react-router-dom": "^6.8.1",
+    "recoil": "^0.7.6",
+    "sort-by": "^1.2.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.19",

@@ -6,7 +6,7 @@ import userState from '@/stores/users';
 const Test = () => {
   const [currentUser, setCurrentUser] = useRecoilState(userState);
 
-  const handleChange = (event: ChangeEvent<any>) => {
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     console.log('event ::::: ', event);
     setCurrentUser(event.target.value);
   };
