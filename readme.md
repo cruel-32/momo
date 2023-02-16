@@ -1,10 +1,28 @@
 # react 프로젝트 설정 및 스터디 #
 
 - 낡은 cra나 webpack, redux 등등 이제 지겨우니 버리자.
+- recoil과 vite를 최우선 사용하는 걸로 목표.
+- 최신버전의 react-router, mui v6, react-query까지 사용하여 토이프로젝트 시작
 
 # vscode 설정 #
-1. Eslint와 vs code용 prettier extension을 설치
-2. 둘 다 활성화되어 있는지 확인
+1. vscode용 Eslint 설치. 
+2. prettier extension은 사용안함(작업영역)
 3. 모든 패키지가 설치되어 있는지 확인
-4. vs 코드의 formatOnSave 활성화
-5. .tsx 파일을 열고 vs 코드의 오른쪽 하단에 Eslint와 Prettier가 있는지 더블 체크로 확인
+4. 아래와 같이 .vscode/settings.json 설정
+
+```JS
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.workingDirectories": [
+        {"mode": "auto"}
+    ],
+    "eslint.validate": [
+        "javascript",
+        "typescript"
+    ]
+}
+  
+```
