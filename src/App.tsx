@@ -1,4 +1,4 @@
-import '@/css/App.scss';
+import '@/css/App.css';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';

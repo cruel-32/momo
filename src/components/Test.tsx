@@ -13,7 +13,7 @@ const Test = () => {
   return (
     <div>
       <input name="currentUserName" onChange={handleChange} value={currentUser} />
-      <div>{currentUser}</div>
+      <div className="bg-white border-r-gray-50">{currentUser}</div>
     </div>
   );
 };
