@@ -1,9 +1,12 @@
 import { useState } from 'react';
+import { useRecoilValue } from 'recoil';
 
 import reactLogo from '@/assets/react.svg';
 import Test from '@/components/Test';
+import usersState from '@/stores/users';
 
 const Root = () => {
+  const users = useRecoilValue(usersState);
   const [count, setCount] = useState(0);
 
   return (
@@ -25,6 +28,7 @@ const Root = () => {
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
       <Test />
+      {users}
     </div>
   );
 };

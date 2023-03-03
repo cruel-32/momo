@@ -12,9 +12,6 @@
     "lint": "npm lint:format && npm lint:fix "
   },
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@fontsource/roboto": "^4.5.8",
     "@headlessui/react": "^1.7.11",
     "@heroicons/react": "^2.0.15",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
