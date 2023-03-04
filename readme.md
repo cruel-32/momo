@@ -3,6 +3,7 @@
 - 낡은 cra나 webpack, redux 등등 이제 지겨우니 버리자.
 - recoil과 vite를 최우선 사용하는 걸로 목표.
 - 최신버전의 react-router, mui v6, react-query까지 사용하여 토이프로젝트 시작
+- 테스테스트
 
 # vscode 설정
 
