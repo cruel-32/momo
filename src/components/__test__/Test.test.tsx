@@ -1,8 +1,10 @@
-import { fireEvent, render, screen } from '@testing-library/react';
-import Recoil from 'recoil';
+import { act, fireEvent, screen } from '@testing-library/react';
+import { RecoilRoot, useRecoilValue } from 'recoil';
 import { describe, expect, it, vi } from 'vitest';
 
 import Test from '@/components/Test';
+import currentUserState from '@/stores/users';
+import { render } from '@/tests/render';
 
 describe('something truthy and falsy', () => {
   it('true to be true', () => {
@@ -18,15 +20,13 @@ describe('something truthy and falsy', () => {
       onChange: vi.fn(),
     };
 
-    const component = render(
-      <Recoil.RecoilRoot>
-        <Test {...props} />
-      </Recoil.RecoilRoot>,
-    );
+    act(() => render(<Test {...props} />));
 
-    fireEvent.change(component.getByTestId('currentUserName'), {
+    fireEvent.change(screen.getByTestId('currentUserName'), {
       target: { value: 'user@test.com' },
     });
+
+    // const value = useRecoilValue(currentUserState);
 
     expect(props.onChange).toHaveBeenCalled();
     expect(screen.getByTestId('target').innerHTML).toBe('user@test.com');
