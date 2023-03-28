@@ -45,4 +45,14 @@ describe('something truthy and falsy', () => {
     expect(onChange).toHaveBeenCalledWith('testing');
     expect(onChange).toHaveBeenCalledWith('user@test.com');
   });
+
+  it('hook 테스트', () => {
+    const testSnapshot = snapshot_UNSTABLE(({ set }) =>
+      set(currentUserState, 'outside of React'),
+    );
+
+    expect(testSnapshot.getLoadable(currentUserState).valueOrThrow()).toBe(
+      'outside of React',
+    );
+  });
 });
