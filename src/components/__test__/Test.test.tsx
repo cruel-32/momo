@@ -7,7 +7,7 @@ import currentUserState from '@/stores/users';
 import { RecoilObserver } from '@/tests/RecoilObserver';
 import { render } from '@/tests/render';
 
-describe('something truthy and falsy', () => {
+describe('Test 컴포넌트', () => {
   const initialSnapshot = snapshot_UNSTABLE();
 
   const props = {
